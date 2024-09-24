@@ -1,15 +1,11 @@
-# Streamlit-Antd-Components
+# Streamlit-Antd-Components-mod
 
-[![Open in Streamlit][share_badge]][share_link] 
-[![GitHub][github_badge]][github_link] 
+[![Open in Streamlit][share_badge]][share_link]
+[![GitHub][github_badge]][github_link]
 [![PyPI][pypi_badge]][pypi_link]
 [![download][download_badge]][download_link]
 
-A Streamlit custom component to implement [Antd-Design](https://ant.design/) and [Mantine](https://v6.mantine.dev/) widgets.
-
-Check out the [Demo App][share_link] for more example.
-![demo](./img/demo.jpg)
-
+A modded library forked from the excellent Streamlit-Antd-Components project to enable coloured icons in steps component. https://github.com/nicedouble/StreamlitAntdComponents
 
 This library now provides component blow:
 
@@ -18,7 +14,6 @@ This library now provides component blow:
 - `menu` A versatile menu for navigation
 - `steps` A navigation bar that guides users through the steps of a task
 - `cascader` Chooses cascade items in one float layer for better user experience.
-- `checkbox` A group of checkbox.
 - `rate` Rate component
 - `switch` Switching between two states or on-off state
 - `transfer` Double column transfer choice box
@@ -65,19 +60,11 @@ st.write(f'The selected button label is: {btn}')
 - ~~Add component callback function~~
 - multiple sac components
 
-
 [share_badge]: https://static.streamlit.io/badges/streamlit_badge_black_white.svg
-
 [share_link]: https://nicedouble-streamlitantdcomponentsdemo-app-middmy.streamlit.app/
-
 [github_badge]: https://badgen.net/badge/icon/GitHub?icon=github&color=black&label
-
 [github_link]: https://github.com/nicedouble/StreamlitAntdComponents
-
 [pypi_badge]: https://badgen.net/pypi/v/streamlit-antd-components
-
 [pypi_link]: https://pypi.org/project/streamlit-antd-components/
-
 [download_badge]: https://badgen.net/pypi/dm/streamlit-antd-components
-
 [download_link]: https://pypi.org/project/streamlit-antd-components/#files
