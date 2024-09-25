@@ -14,13 +14,13 @@ def readme() -> str:
 
 
 setuptools.setup(
-    name="streamlit-antd-components",
-    version="0.3.2",
-    author="jihaoran",
-    description="streamlit customer components of Antd Design and Mantine",
+    name="streamlit-antd-components-mod",
+    version="0.1.0",
+    author="kennethqzw",
+    description="streamlit custom components of Antd Design and Mantine, modded from jihaoran's streamlit-antd-components",
     long_description=readme(),
     long_description_content_type="text/markdown",
-    url="https://github.com/nicedouble/StreamlitAntdComponents",
+    url="https://github.com/Cocopuffff/StreamlitAntdComponents",
     packages=setuptools.find_packages(),
     include_package_data=True,
     python_requires=">=3.8",

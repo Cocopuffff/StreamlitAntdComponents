@@ -12,3 +12,5 @@ test*
 poetry.lock
 pyproject.toml
 .vscode
+Pipfile
+Pipfile.lock
