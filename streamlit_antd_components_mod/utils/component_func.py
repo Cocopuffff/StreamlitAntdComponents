@@ -23,7 +23,7 @@ if not _RELEASE:
 else:
     parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     build_dir = os.path.join(parent_dir, "frontend/build")
-    component_func = components.declare_component("sac", path=build_dir)
+    component_func = components.declare_component("sacm", path=build_dir)
 
 
 def convert_session_value(id, value, kv: dict, return_index: bool):
