@@ -37,7 +37,7 @@ Create a group of buttons,use more style params.
 
 ```python
 import streamlit as st
-import streamlit_antd_components-mod as sacm
+import streamlit_antd_components_mod as sacm
 
 btn = sac.buttons(
     items=['button1', 'button2', 'button3'],
