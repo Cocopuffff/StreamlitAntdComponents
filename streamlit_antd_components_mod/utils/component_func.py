@@ -17,7 +17,7 @@ from .. import _RELEASE
 
 if not _RELEASE:
     component_func = components.declare_component(
-        "sac",
+        "sacm",
         url="http://localhost:3000",
     )
 else:

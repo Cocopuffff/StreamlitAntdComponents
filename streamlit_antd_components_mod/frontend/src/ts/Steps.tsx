@@ -10,6 +10,7 @@ interface StepsProp {
   index: number;
   size: any;
   color: any;
+  icon_color_map: { [key: string]: string };
   placement: any;
   direction: any;
   variant: any;
@@ -25,6 +26,7 @@ const AntdSteps = (props: StepsProp) => {
   const index = props["index"];
   const size = props["size"];
   const color = props["color"];
+  const icon_color_map = props["icon_color_map"] || {};
   const placement = props["placement"];
   const direction = props["direction"];
   const variant = props["variant"];
@@ -42,12 +44,23 @@ const AntdSteps = (props: StepsProp) => {
     setTimeout(() => Streamlit.setFrameHeight(), 0.01);
   });
 
-  const textStyle = `
-    .ant-steps-item-title{
-        font-size:${getSize(size)}px !important
+  let textStyle = `
+    .ant-steps-item.ant-steps-item-process.ant-steps-item-custom.ant-steps-item-active .ant-steps-item-container .ant-steps-item-content .ant-steps-items-title {
+      font-weight: 600;
     }
     `;
-  insertStyle(`sac.steps.style`, textStyle);
+  Object.keys(icon_color_map).forEach((key) => {
+    const icon = key;
+    const iconColorValue = icon_color_map[key];
+    const iconColor = GetColor(iconColorValue);
+    const style = `
+      .ant-steps .ant-steps-item .ant-steps-icon i.bi.bi-${icon} {
+        color: ${iconColor} !important;
+      }
+      `;
+    textStyle += style;
+  });
+  insertStyle(`sacm.steps.style`, textStyle);
 
   //callback
   const onChange = (current: any) => {

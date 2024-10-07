@@ -33,25 +33,28 @@ pip install streamlit-antd-components-mod
 
 ## Quickstart
 
-Create a group of buttons,use more style params.
+Create a list of steps,use more style params.
 
 ```python
 import streamlit as st
 import streamlit_antd_components_mod as sacm
 
-btn = sac.buttons(
-    items=['button1', 'button2', 'button3'],
-    index=0,
-    format_func='title',
-    align='center',
-    direction='horizontal',
-    radius='lg',
-    return_index=False,
+items = [
+    sacm.StepsItem(title='title A', description='description A', icon='check'),
+    sacm.StepsItem(title='title B', description='description B', icon='circle-fill'),
+    sacm.StepsItem(title='title C', description='description C', icon='x-circle'),
+]
+selected_step = sacm.steps(
+    items=items,
+    size='lg',
+    color='grey',
+    direction='vertical',
+    icon_color_map={'check': 'green', 'circle-fill': 'yellow', 'x-circle': '#AA4A44'}
 )
-st.write(f'The selected button label is: {btn}')
+st.write(f'The selected step is: {selected_step}')
 ```
 
-![buttons](./img/buttons.jpg)
+![steps](./img/steps.png)
 
 [share_badge]: https://static.streamlit.io/badges/streamlit_badge_black_white.svg
 [share_link]: https://nicedouble-streamlitantdcomponentsdemo-app-middmy.streamlit.app/

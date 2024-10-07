@@ -1,6 +1,6 @@
 {
-  "name": "streamlit-antd-components",
-  "version": "0.2.0",
+  "name": "streamlit-antd-components-mod",
+  "version": "0.1.5",
   "private": true,
   "dependencies": {
     "@mantine/core": "6.0.19",

@@ -18,6 +18,7 @@ def steps(
         size: Union[MantineSize, int] = 'md',
         variant: Literal['default', 'navigation'] = 'default',
         color: Union[MantineColor, str] = None,
+        icon_color_map: Dict[str, Union[MantineColor, str]] = None,
         placement: Direction = 'horizontal',
         direction: Direction = 'horizontal',
         dot: bool = False,
@@ -35,6 +36,7 @@ def steps(
     :param size: steps size,support mantine size and int in px
     :param variant: steps variant
     :param color: steps color,default streamlit primary color,support built-in mantine color, hex and rgb color
+    :param icon_color_map: dictionary mapping of BsIcon or AntIcon: steps color, support built-in mantine color, hex and rgb color
     :param placement: item title placement
     :param direction: steps direction
     :param dot: dot style steps
