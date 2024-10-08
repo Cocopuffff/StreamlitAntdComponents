@@ -45,7 +45,7 @@ const AntdSteps = (props: StepsProp) => {
   });
 
   let textStyle = `
-    .ant-steps-item.ant-steps-item-process.ant-steps-item-custom.ant-steps-item-active .ant-steps-item-container .ant-steps-item-content .ant-steps-items-title {
+    .ant-steps-item.ant-steps-item-process.ant-steps-item-custom.ant-steps-item-active .ant-steps-item-container .ant-steps-item-content .ant-steps-itemx-title {
       font-weight: 600;
     }
     `;
